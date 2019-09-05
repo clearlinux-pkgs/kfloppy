@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xDBD2CE893E2D1C87 (cfeck@kde.org)
 #
 Name     : kfloppy
-Version  : 19.08.0
-Release  : 12
-URL      : https://download.kde.org/stable/applications/19.08.0/src/kfloppy-19.08.0.tar.xz
-Source0  : https://download.kde.org/stable/applications/19.08.0/src/kfloppy-19.08.0.tar.xz
-Source1 : https://download.kde.org/stable/applications/19.08.0/src/kfloppy-19.08.0.tar.xz.sig
+Version  : 19.08.1
+Release  : 13
+URL      : https://download.kde.org/stable/applications/19.08.1/src/kfloppy-19.08.1.tar.xz
+Source0  : https://download.kde.org/stable/applications/19.08.1/src/kfloppy-19.08.1.tar.xz
+Source1 : https://download.kde.org/stable/applications/19.08.1/src/kfloppy-19.08.1.tar.xz.sig
 Summary  : Floppy Formatter
 Group    : Development/Tools
 License  : GPL-2.0
@@ -72,14 +72,14 @@ locales components for the kfloppy package.
 
 
 %prep
-%setup -q -n kfloppy-19.08.0
+%setup -q -n kfloppy-19.08.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1565898412
+export SOURCE_DATE_EPOCH=1567700360
 mkdir -p clr-build
 pushd clr-build
 # -Werror is for werrorists
@@ -96,7 +96,7 @@ make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1565898412
+export SOURCE_DATE_EPOCH=1567700360
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kfloppy
 cp COPYING %{buildroot}/usr/share/package-licenses/kfloppy/COPYING
