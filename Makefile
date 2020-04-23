@@ -1,5 +1,5 @@
 PKG_NAME := kfloppy
-URL = https://download.kde.org/stable/release-service/19.12.3/src/kfloppy-19.12.3.tar.xz
+URL = https://download.kde.org/stable/release-service/20.04.0/src/kfloppy-20.04.0.tar.xz
 ARCHIVES = 
 
 include ../common/Makefile.common
